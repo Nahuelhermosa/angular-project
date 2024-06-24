@@ -1,3 +1,17 @@
+/* app.component.css */
+
+header.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajusta el valor según tus necesidades */
+}
+
+header.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1 {
-    color: rgb(4, 70, 253)
+    color: rgb(4, 70, 253);
 }

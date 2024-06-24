@@ -7,6 +7,7 @@ import { ProductService } from '../product.service';
   standalone: true,
   imports: [CommonModule],
   template: `
+  
     <div *ngIf="products && products.length" class="products-container">
       <div *ngFor="let product of products" class="product-card">
         <h2>{{ product.title }}</h2>

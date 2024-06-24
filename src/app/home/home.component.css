@@ -5,6 +5,9 @@
     justify-content: center; /* Centrar horizontalmente */
     gap: 16px; /* Espacio entre las tarjetas */
     padding: 16px; /* Espaciado interno */
+   
+  
+    
   }
   
   /* Estilo de cada tarjeta de producto */
@@ -12,10 +15,11 @@
     background-color: rgb(250, 251, 252);
     border: 1px solid #170cbd;
     border-radius: 1rem;
-    padding: 16px;
+    padding: 5px;
     text-align: center;
-    width: calc(50% - 32px); /* La mitad del tamaño con espacio entre tarjetas */
+    width: 20%; /* La mitad del tamaño con espacio entre tarjetas */
     box-sizing: border-box;
+    
   }
   
   .product-card img {

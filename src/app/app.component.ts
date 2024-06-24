@@ -1,34 +1,24 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FilterComponent } from './filter/filter.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FilterComponent], // Agrega FilterComponent aquí
   template: `
-
- <header class="header-name">
-  <img 
-  class="first-logo"
-  src="/assets/logo1.png" 
-  alt="logo"
-  aria-hidden="true"
-  routerLink="/"
-  />
-  <h1>titulo de la tienda</h1>
- </header>
-
- <main>
-
-<router-outlet></router-outlet>
-
- </main>
- <footer>
-  <h1>este es el footer</h1>
- </footer>
-
+    <header class="logo">
+      <img src="logo2.png" alt="" srcset="">
+    </header>
+    <app-filter></app-filter> <!-- Utiliza el selector del FilterComponent correctamente -->
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <footer>
+      <h1>este es el footer</h1>
+    </footer>
   `,
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'project';

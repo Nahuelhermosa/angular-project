@@ -1,0 +1,14 @@
+/* filter.component.css */
+
+/* Puedes agregar estilos personalizados para el FilterComponent aquí */
+form {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  input[type="search"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
