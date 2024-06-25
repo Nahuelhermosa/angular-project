@@ -10,7 +10,7 @@ import { FilterComponent } from './filter/filter.component';
     <header class="logo">
       <img src="logo2.png" alt="" srcset="">
     </header>
-    <app-filter></app-filter> <!-- Utiliza el selector del FilterComponent correctamente -->
+    <!-- Utiliza el selector del FilterComponent correctamente -->
     <main>
       <router-outlet></router-outlet>
     </main>
@@ -21,5 +21,5 @@ import { FilterComponent } from './filter/filter.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project';
+  product = FilterComponent;
 }
