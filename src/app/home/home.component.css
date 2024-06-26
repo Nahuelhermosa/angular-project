@@ -1,36 +1,52 @@
 /* Estilo del contenedor de productos */
 .products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrar horizontalmente */
-    gap: 16px; /* Espacio entre las tarjetas */
-    padding: 16px; /* Espaciado interno */
-   
-  
-    
-  }
-  
-  /* Estilo de cada tarjeta de producto */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 16px; /* Espacio entre las tarjetas */
+  padding: 16px; /* Espaciado interno */
+}
+
+/* Estilo de cada tarjeta de producto */
+.product-card {
+  background-color: rgb(250, 251, 252);
+  border: 1px solid #170cbd;
+  border-radius: 1rem;
+  padding: 5px;
+  text-align: center;
+  width: 20%; /* La mitad del tamaño con espacio entre tarjetas */
+  box-sizing: border-box;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para el contenedor del botón */
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+/* Estilo para el botón */
+.button button {
+  font-size: 1.5rem; /* Ajusta el tamaño del texto del botón */
+  padding: 10px 20px; /* Ajusta el espacio interno del botón */
+ 
+ 
+  border: none; /* Eliminar el borde predeterminado */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  text-decoration: none; /* Eliminar la línea del texto */
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
   .product-card {
-    background-color: rgb(250, 251, 252);
-    border: 1px solid #170cbd;
-    border-radius: 1rem;
-    padding: 5px;
-    text-align: center;
-    width: 20%; /* La mitad del tamaño con espacio entre tarjetas */
-    box-sizing: border-box;
-    
+    width: calc(100% - 32px); /* Tamaño completo en pantallas más pequeñas */
   }
-  
-  .product-card img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .product-card {
-      width: calc(100% - 32px); /* Tamaño completo en pantallas más pequeñas */
-    }
-  }
-  
+}

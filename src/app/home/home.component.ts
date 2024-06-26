@@ -3,14 +3,17 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductService } from '../product.service';
 import { FilterComponent } from '../filter/filter.component';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FilterComponent],
+  imports: [CommonModule, FilterComponent, RouterModule],
   template: `
+
     <app-filter [products]="products" (filteredProducts)="updateFilteredProducts($event)"></app-filter>
-    
+    <a class="button" routerLink="/about"><button>inicio de sesion</button></a>
     <div *ngIf="filteredProducts && filteredProducts.length" class="products-container">
       <div *ngFor="let product of filteredProducts" class="product-card">
         <h2>{{ product.title }}</h2>
