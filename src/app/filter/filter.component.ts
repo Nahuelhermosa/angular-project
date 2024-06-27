@@ -11,7 +11,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
         placeholder="Filter by products" 
         #filter
       />
-      <button type="submit" class="primary">Search</button>
+      <button className=button type="submit" class="primary">Search</button>
     </form>
   `,
   styleUrls: ['./filter.component.css']

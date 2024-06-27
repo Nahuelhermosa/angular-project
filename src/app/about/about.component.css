@@ -1,0 +1,28 @@
+h1 {
+    color: white;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    font-size: 2rem;
+  }
+  contenedro{
+    font-size: 50%;
+  }
+  .descripcion {
+    display: flex;
+    flex-direction: column;
+    font-size:2rem;
+  }
+  
+  input {
+    padding: 5px;
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+  

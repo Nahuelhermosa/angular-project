@@ -5,9 +5,15 @@ form {
   display: flex;
   justify-content: center;
   margin: 10px 0;
+  
 }
 
 input[type="search"] {
   padding: 5px;
+  border-radius: 5px;
   font-size: 16px;
 }
+button {
+  border-radius: 5px;
+}
+
