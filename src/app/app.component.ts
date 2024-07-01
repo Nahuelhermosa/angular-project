@@ -14,8 +14,8 @@ import { FooterComponent } from './footer/footer.component';
     <!-- Utiliza el selector del FilterComponent correctamente -->
     <main>
       <router-outlet></router-outlet>
-    </main>
-    <app-footer></app-footer> <!-- Reemplaza el footer aquí -->
+    </main> 
+    <app-footer></app-footer>
   `,
   styleUrls: ['./app.component.css']
 })

@@ -1,17 +1,50 @@
-
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #2b2a61; /* Color de fondo */
     color: white; /* Color del texto */
-    text-align: center; /* Centrar el texto */
-    padding: 5px; /* Espaciado interno */
-    font-size: 14px; /* Tamaño de la fuente */
-    position: fixed; /* Posición fija al fondo */
-    bottom: 0; /* Ajusta el footer al fondo */
+    padding: 10px; /* Espaciado interno */
+    font-size: 15px; /* Tamaño de la fuente */
     width: 100%; /* Ancho completo */
+    margin-top: 5px; /* Margen superior opcional */
   }
   
+.left-content {
+    display: flex;
+    flex-direction: column;
+  }
   
+  .right-content {
+    margin-left: auto;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    
+  }
   .footer p {
+
     margin: 5px 0; /* Espaciado alrededor del párrafo */
+  }
+
+  .icono2 {
+    width: 55px; /* Ajusta el tamaño de la imagen según sea necesario */
+    cursor: pointer;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }
+  .contact {
+    cursor: pointer;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+    
   }
   
