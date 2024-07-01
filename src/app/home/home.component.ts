@@ -9,8 +9,10 @@ import { RouterModule, Router } from '@angular/router';
   standalone: true,
   imports: [CommonModule, FilterComponent, RouterModule],
   template: `
-    <app-filter [products]="products" (filteredProducts)="updateFilteredProducts($event)"></app-filter>
-    <a class="button" routerLink="/about"><button>Inicio de Sesión</button></a>
+    <div class="header-container">
+      <app-filter [products]="products" (filteredProducts)="updateFilteredProducts($event)"></app-filter>
+      <a class="button" routerLink="/about"><button>Inicio de Sesión</button></a>
+    </div>
     <div *ngIf="filteredProducts && filteredProducts.length" class="products-container">
       <div *ngFor="let product of filteredProducts" class="product-card">
         <h2>{{ product.title }}</h2>

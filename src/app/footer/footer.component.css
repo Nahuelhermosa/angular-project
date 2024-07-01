@@ -1,0 +1,17 @@
+
+.footer {
+    background-color: #2b2a61; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 5px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    position: fixed; /* Posición fija al fondo */
+    bottom: 0; /* Ajusta el footer al fondo */
+    width: 100%; /* Ancho completo */
+  }
+  
+  
+  .footer p {
+    margin: 5px 0; /* Espaciado alrededor del párrafo */
+  }
+  

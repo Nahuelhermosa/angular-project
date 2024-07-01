@@ -1,3 +1,12 @@
+/* Contenedor de la cabecera */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 120px; /* Ajusta el espaciado según sea necesario */
+  background-color: #2b2a61; /* Color de fondo opcional */
+}
+
 /* Estilo del contenedor de productos */
 .products-container {
   display: flex;
@@ -33,19 +42,27 @@
 
 /* Estilo para el botón */
 .button button {
-  font-size: 1rem; /* Ajusta el tamaño del texto del botón */
-  padding: 10px 20px; /* Ajusta el espacio interno del botón */
- 
- 
-  border: none; /* Eliminar el borde predeterminado */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  text-decoration: none; /* Eliminar la línea del texto */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  
 }
-
+.button button:hover {
+  background-color: #0056b3;
+}
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start; /* Alinea a la izquierda en pantallas más pequeñas */
+  }
+
   .product-card {
     width: calc(100% - 32px); /* Tamaño completo en pantallas más pequeñas */
   }

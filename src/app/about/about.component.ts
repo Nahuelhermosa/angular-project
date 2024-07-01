@@ -2,20 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ProductService } from '../product.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   template: `
-    <h1>Registro</h1>
+    <div class="header">
+      <button class="home-button" routerLink="/home">Inicio</button>
+    </div>
     <div class="form-container">
       <div class="form-card-container">
         <form [formGroup]="registerForm" (ngSubmit)="handleSubmit()">
           <label class="descripcion">
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" placeholder="firstName" />
+            <input type="text" id="first-name" formControlName="firstName" placeholder="First Name" />
             <span class="alert" [hidden]="firstName.valid || firstName.untouched">
               First name is required
             </span>

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FilterComponent } from './filter/filter.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FilterComponent], // Agrega FilterComponent aquí
+  imports: [RouterOutlet, FilterComponent, FooterComponent], // Agrega FooterComponent aquí
   template: `
     <header class="logo">
       <img src="logo2.png" alt="" srcset="">
@@ -14,9 +15,7 @@ import { FilterComponent } from './filter/filter.component';
     <main>
       <router-outlet></router-outlet>
     </main>
-    <footer>
-      <h1>este es el footer</h1>
-    </footer>
+    <app-footer></app-footer> <!-- Reemplaza el footer aquí -->
   `,
   styleUrls: ['./app.component.css']
 })
