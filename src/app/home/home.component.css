@@ -46,13 +46,27 @@
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   
 }
 .button button:hover {
+  background-color: #0056b3;
+}
+.button-card{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+ 
+}
+.button-card:hover {
   background-color: #0056b3;
 }
 

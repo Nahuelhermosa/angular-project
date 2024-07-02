@@ -19,7 +19,7 @@ import { RouterModule, Router } from '@angular/router';
         <p>{{ product.description }}</p>
         
         <img [src]="product.image" alt="{{ product.title }}" />
-        <button (click)="viewProduct(product.id)">Ver Producto</button>
+        <button (click)="viewProduct(product.id)" class="button-card">Producto y Precio</button>
       </div>
     </div>
   `,

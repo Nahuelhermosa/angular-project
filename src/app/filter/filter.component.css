@@ -17,3 +17,12 @@ button {
   border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  .form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+}
+

@@ -43,6 +43,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 
         <div *ngIf="product" class="product-card">
           <h2>{{ product.title }}</h2>
+          <h2> $ {{ product.price }}</h2>
           <img [src]="product.image" alt="{{ product.title }}" />
         </div>
       </div>
